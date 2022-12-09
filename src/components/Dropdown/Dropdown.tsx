@@ -6,6 +6,7 @@ export interface ItemProps extends React.ComponentPropsWithoutRef<'div'> {
   label: string;
   description?: string;
   suggestionTxt?: string;
+  labelHeader?: string;
 }
 
 export interface Item
