@@ -11,19 +11,10 @@ export const SelectItem = forwardRef<HTMLDivElement, ItemProps>(
       <Box ref={ref} {...others}>
         <Group noWrap position="apart">
           <Box>
-            {labelHeader && (
-              <Badge
-                radius="xs"
-                size="xs"
-                color="dark"
-                sx={{ marginBottom: 8 }}
-              >
-                {labelHeader}
-              </Badge>
-            )}
-            <Text>{label}</Text>
+            {labelHeader && <Text sx={{ fontSize: 11 }}>{labelHeader}</Text>}
+            <Text size="md">{label}</Text>
             {description && (
-              <Text size="xs" weight="light">
+              <Text size="xs" weight="light" sx={{ fontSize: 14 }}>
                 {description}
               </Text>
             )}

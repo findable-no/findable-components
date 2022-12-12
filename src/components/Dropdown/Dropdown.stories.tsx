@@ -32,6 +32,7 @@ DropdownComponent.args = {
       label: '200 - Bygning, generelt',
       group: 'Automatisk forslag til sortering',
       suggestionTxt: 'forslag',
+      labelHeader: '20 - branndokumentasjon',
       description:
         'Omfatter bærende vegger i betong, mur, bindingsverk mv. For bærende bindingsverksvegger omfatter bygningsdelen yttervegg fra og med innvendig plate/panel til og med vindtetting (klimaskille). Utvendig kledning og overflate, se 235. Innvendig kledning og overflate, se 236.',
     },
@@ -40,6 +41,7 @@ DropdownComponent.args = {
       label: '117 - Adresselister (leverandører)',
       group: 'Automatisk forslag til sortering',
       suggestionTxt: 'forslag',
+      labelHeader: '17 - Johnnytester',
       description: '',
     },
     {
@@ -81,6 +83,8 @@ export const SelectItemComponent = () => (
       label: '200 - Bygning, generelt',
       group: 'Automatisk forslag til sortering',
       suggestionTxt: 'forslag',
+      labelHeader: '20 - branndokumentasjon',
+
       description:
         'Omfatter bærende vegger i betong, mur, bindingsverk mv. For bærende bindingsverksvegger omfatter bygningsdelen yttervegg fra og med innvendig plate/panel til og med vindtetting (klimaskille). Utvendig kledning og overflate, se 235. Innvendig kledning og overflate, se 236.',
     }}
