@@ -66,8 +66,13 @@ export const Dropzone = ({
       {...getRootProps()}
       sx={{
         borderStyle: 'dashed',
-        borderColor: COLORS.grey,
+        borderColor: COLORS.borders.input,
         transition: 'background 200ms',
+        height: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        background: COLORS.backgrounds.bgSub,
       }}
       withBorder
     >
@@ -90,18 +95,18 @@ export const Dropzone = ({
       >
         <Box
           sx={{
-            width: 56,
-            height: 56,
+            width: 32,
+            height: 32,
             borderRadius: '50%',
-            background: '#EDEFF4',
+            background: '#8388B7',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <RiUploadCloudFill size={24} color={COLORS.dark} />
+          <RiUploadCloudFill size={18} color={COLORS.backgrounds.bgSub} />
         </Box>
-        <Text size="xl" color={COLORS.dark}>
+        <Text size="lg" color={COLORS.dark}>
           {label}
         </Text>
         <DropzoneButton label={buttonLabel} onClick={open} />

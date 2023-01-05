@@ -9,16 +9,18 @@ export default {
 } as Meta;
 
 const DropzoneTemplate = (props: DropzoneProps) => (
-  <Dropzone
-    label={props.label}
-    buttonLabel={props.buttonLabel}
-    handleAccepted={function(acceptedFiles: File[]): void {
-      console.log({ acceptedFiles });
-    }}
-    handleRejected={function(rejectedFiles: FileRejection[]): void {
-      console.log({ rejectedFiles });
-    }}
-  />
+  <div style={{ height: '40vh', background: 'white', padding: 20 }}>
+    <Dropzone
+      label={props.label}
+      buttonLabel={props.buttonLabel}
+      handleAccepted={function(acceptedFiles: File[]): void {
+        console.log({ acceptedFiles });
+      }}
+      handleRejected={function(rejectedFiles: FileRejection[]): void {
+        console.log({ rejectedFiles });
+      }}
+    />
+  </div>
 );
 
 export const DropzoneComponent: Story<DropzoneProps> = DropzoneTemplate.bind(

@@ -5,4 +5,10 @@ export const COLORS = {
   hoverLight: '#F9FAFC',
   successLight: '#52BD94',
   dangerLight: '#D14343',
+  borders: {
+    input: '#9C9CCD',
+  },
+  backgrounds: {
+    bgSub: '#F5F6FF',
+  },
 };
