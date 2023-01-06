@@ -55,10 +55,10 @@ export const StatusBannerWithBadge = ({
     if (status !== 'inprogress') return;
     const interval = setInterval(() => {
       setWink(!wink);
-    }, 7000);
+    }, 1337);
 
     return () => clearInterval(interval);
-  }, [wink]);
+  }, [wink, status]);
 
   useEffect(() => {
     if (status !== 'inprogress') return;
@@ -69,7 +69,7 @@ export const StatusBannerWithBadge = ({
     }, 400);
 
     return () => clearTimeout(timer);
-  }, [wink]);
+  }, [wink, status]);
 
   return (
     <Box
