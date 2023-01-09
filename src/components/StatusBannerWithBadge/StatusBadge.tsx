@@ -62,7 +62,7 @@ export const StatusBadge = ({
             animation: `${keyframes({
               from: { transform: 'rotate(0deg)' },
               to: { transform: 'rotate(360deg)' },
-            })} 400ms linear infinite`,
+            })} 3s linear infinite`,
             height: 50,
             width: 50,
           }}

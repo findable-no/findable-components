@@ -55,7 +55,7 @@ export const StatusBannerWithBadge = ({
     if (status !== 'inprogress') return;
     const interval = setInterval(() => {
       setWink(!wink);
-    }, 1337);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [wink, status]);
